@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>Vue Starter</title>
+      <title>Vue Starter - Methods</title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
   	<div id="app">
-  		<!-- <h1>{{ age * 2 }}</h1> --> 
-  		<!-- outputs 27*2 -->
+  	<!-- call method and print what is being returned -->
+  	<!-- <h1>{{ getFullName() }}</h1> -->
 
-  		<!-- <h1>{{ age > 60 ? 'Old' : 'Young' }}</h1>  -->
-  		<!-- outputs Young -->
-
-  		<h1>{{ name.split(' ')[0] }}</h1>
-  		<!-- outputs just first name -->
+  	<!-- select items to be passed into function as parameters -->
+<!--   	<h1>{{ getFullName(firstName, lastName) }}</h1>
+ -->
+   	<h1>{{ getFullName(firstName, lastName).name }}</h1>
 
   	</div>
 
