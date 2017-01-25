@@ -4,7 +4,9 @@ new Vue({
 	el: '#app',
 	// Accesable in our app - can be outputed into html file.
 	data: {
-		blogUrl: 'http://codingexplained.com'
+
+		movieName: 'Gone with the wind',
+		releaseDate: 2001
 	}
 });
 

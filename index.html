@@ -7,8 +7,20 @@
   <body>
 
   	<div id="app">
-  	<!-- v-bind directive asigns attributes and expressions -->
-  		<a v-bind:href="blogUrl">Visit this blog!</a>
+  	
+  	<!-- Store title and release date using string interpolation -->
+  	<p>Title: {{ movieName }} </p>
+  	<p>Released: {{ releaseDate }}</p>
+  	<hr>
+
+  	<!-- Is the movie new or old based on year of 2000 -->
+  	<p>The movie is older then the year 2000, or newer?</p>
+  	<p>{{ releaseDate < 2000 ? 'Old' : 'New' }}</p>
+  	<hr>
+
+  	<!-- Bind the movie name to the title attribute of this div -->
+  	<div v-bind:title="movieName">Hover your mouse here!</div>
+  	<hr>
 
   	</div>
 
