@@ -7,6 +7,11 @@ new Vue({
 
 		movieName: 'Gone with the wind',
 		releaseDate: 2001
+	},
+	methods: {
+		isMovieOld: function(releaseDate){
+			return releaseDate < 2000 ? 'Old' : 'New';
+		}
 	}
 });
 

@@ -15,7 +15,10 @@
 
   	<!-- Is the movie new or old based on year of 2000 -->
   	<p>The movie is older then the year 2000, or newer?</p>
-  	<p>{{ releaseDate < 2000 ? 'Old' : 'New' }}</p>
+  	<!-- Using interpolation -->
+  	<!-- <p>{{ releaseDate < 2000 ? 'Old' : 'New' }}</p> -->
+  	<!-- Using a method -->
+  	<p>{{ isMovieOld(releaseDate) }}</p>
   	<hr>
 
   	<!-- Bind the movie name to the title attribute of this div -->
