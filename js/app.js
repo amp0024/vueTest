@@ -4,8 +4,9 @@ new Vue({
 	el: '#app',
 	// Accesable in our app - can be outputed into html file.
 	methods: {
-		clickedButton: function(){
-			alert('Ths button was clicked');
+		clickedButton: function(message, event){
+			console.log(event);
+			alert(message);
 		}
 	}
 });

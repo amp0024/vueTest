@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>Vue Intro to Events</title>
+      <title>Vue Passing Arguments to Event Listeners</title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
   	<div id="app">
-    <h1>Vue Intro to Events</h1>
+    <h1>Vue Passing Arguments to Event Listeners</h1>
     <hr>
   		<!-- directive name with eventname-->
-      <button v-on:click="clickedButton">Click here!</button>
+      <button v-on:click="clickedButton('Hello World!', $event)">Click here!</button>
 
   	</div>
 
