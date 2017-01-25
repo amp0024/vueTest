@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>Vue Passing Arguments to Event Listeners</title>
+      <title>Vue Directive and event modifiers</title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
   	<div id="app">
-    <h1>Vue Passing Arguments to Event Listeners</h1>
+    <h1>Vue Directive and event modifiers</h1>
     <hr>
-  		<!-- directive name with eventname-->
-      <button v-on:click="clickedButton('Hello World!', $event)">Click here!</button>
+      <!-- <div v-on:click="showDialog">
+        <button v-on:click.stop="showDialog">Click here!</button>
+      </div> -->
+      <!-- <button v-on:click.once="showDialog">Click here!</button> -->
+
+      <button v-on:click.once="showDialog">Click here!</button>
+      <a href="http://google.com" v-on:click.prevent="showDialog" target="_blank">Or here</a>
+
+      <!-- v-on:click.prevent -->
+      <!-- same as preventDefault() -->
 
   	</div>
 
