@@ -3,9 +3,10 @@ new Vue({
 	// controlling html ID element
 	el: '#app',
 	// Accesable in our app - can be outputed into html file.
-	data: {
-		firstName: 'Adam',
-		lastName: 'Poulsen'
+	methods: {
+		clickedButton: function(){
+			alert('Ths button was clicked');
+		}
 	}
 });
 

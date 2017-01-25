@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>Vue Expressions with Directives</title>
+      <title>Vue Intro to Events</title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
   	<div id="app">
-    <h1>Vue Expressions with Directives</h1>
+    <h1>Vue Intro to Events</h1>
     <hr>
-  		<p v-bind:title="firstName + ' ' + lastName">Hover to see my name</p>
-  		
+  		<!-- directive name with eventname-->
+      <button v-on:click="clickedButton">Click here!</button>
+
   	</div>
 
   <!-- Javascripts sources -->
