@@ -10,7 +10,8 @@ new Vue({
 	},
 	methods: {
 		isMovieOld: function(releaseDate){
-			return releaseDate < 2000 ? 'Old' : 'New';
+			// return releaseDate < 2000 ? 'Old' : 'New';
+			return releaseDate < 2000;
 		}
 	}
 });
