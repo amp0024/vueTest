@@ -4,7 +4,8 @@ new Vue({
 	el: '#app',
 	// Accesable in our app - can be outputed into html file.
 	data: {
-		message: 'Hello World!'
+		firstName: 'Adam',
+		lastName: 'Poulsen'
 	}
 });
 

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>Vue Starter</title>
+      <title>Vue Expressions with Directives</title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
   	<div id="app">
-  		<h1>{{ message }}</h1>
+    <h1>Vue Expressions with Directives</h1>
+    <hr>
+  		<p v-bind:title="firstName + ' ' + lastName">Hover to see my name</p>
   		
   	</div>
 
