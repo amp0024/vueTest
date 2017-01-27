@@ -1,2 +1,12 @@
 /*style goes here
 */
+
+p.info {
+	font-style: italic;
+	color: blue;
+}
+
+ul.info {
+	font-style: italic;
+	color: blue;
+}

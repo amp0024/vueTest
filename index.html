@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>Vue Directive and event modifiers</title>
+      <title>Vue Key Modifiers</title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
   	<div id="app">
-    <h1>Vue Directive and event modifiers</h1>
+    <h1>Vue Key Modifiers</h1>
+    <p><i>Used with keybar events</i></p>
     <hr>
-      <!-- <div v-on:click="showDialog">
-        <button v-on:click.stop="showDialog">Click here!</button>
-      </div> -->
-      <!-- <button v-on:click.once="showDialog">Click here!</button> -->
+    <!-- Key modifier name = enter -->
+    <p>Nothing will fire until the enter key is pressed</p>
+    <input type="text" v-on:keyup.enter="pressedEnter">
 
-      <button v-on:click.once="showDialog">Click here!</button>
-      <a href="http://google.com" v-on:click.prevent="showDialog" target="_blank">Or here</a>
-
-      <!-- v-on:click.prevent -->
-      <!-- same as preventDefault() -->
-
+    <p class="info">* Other key modifer names are</p> 
+    <ul class="info">
+      <li>tab</li>
+      <li>delete</li>
+      <li>esc</li>
+      <li>space</li>
+      <li>use the keyboard character code</li>
+    </ul>
   	</div>
+
+    
+    <a href="https://www.youtube.com/watch?v=utJGnK9D_UQ">53:17</a>
 
   <!-- Javascripts sources -->
   
